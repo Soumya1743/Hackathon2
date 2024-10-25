@@ -19,6 +19,7 @@ body{
     border: 7px solid rgb(67, 67, 67);
     border-radius: 50%;
     margin-top: 3rem;
+    width: 13rem;
 }
 #name{
     color: white;
@@ -50,7 +51,7 @@ body{
     height: 60%;
 }
 #welcome{
-    margin-top: -70rem;
+    margin-top: -80rem;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -62,6 +63,9 @@ body{
     font-size: 4rem;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 100;
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 #address{
     color: white;
@@ -82,16 +86,20 @@ body{
     padding: 1rem 2rem 1rem 2rem;
     color: #46cfa4;
 }
-#hireme:hover{
+#contact_hire{
+    text-decoration: none;
+    color: #46cfa4;
+}
+#hireme:hover, #contact_hire:hover{
     background-color: #46cfa4;
     color: white;
     transition: all 0.5s ease;
     cursor: pointer;
 }
 
+
 #about{
-    margin-top: 42rem;
-    padding-top: 30px;
+    margin-top: 55rem;
     height: 100vh;
     background-color: #25282d;
 }
@@ -101,18 +109,20 @@ body{
     text-align: center;
     letter-spacing: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 6rem;
 }
 .knowmemore{
     text-align: center;
-    margin-top: -155px;
+    margin-top: -5.5rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
 }
 .line{
     text-align: center;
     color: #46cfa4;
     font-size: 2rem;
-    margin-top: -40px;
+    margin-top: -1rem;
     margin-bottom: 5rem;
 }
 #about_title{
@@ -148,13 +158,14 @@ body{
 }
 .block2{
     width: 28%;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .block2 p{
     color: white;
     border-bottom: 1px solid gray;
     margin-left: 2rem;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 #block2_name{
@@ -191,27 +202,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: blink-caret 3s step-end infinite, colorChange 2s infinite, blink 2s infinite, typing 2s steps(40, end), wave 1s infinite;
+    animation: blink-caret 3s step-end infinite,  blink 2.5s infinite, typing 2s steps(40, end), wave 1s infinite;
 }
-
-
-#resume{
-    padding: 1rem 2rem 1rem 2rem;
-    border-radius: 50px;
-    background-color: #46cfa4;
-    color: white;
-    font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-left: 2rem;
-    border: none;
-    cursor: pointer;
-}
-#resume:hover{
-    background-color: #3aa885;
-    transition: all 0.5s ease-in-out;
-}
-
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
@@ -228,12 +220,6 @@ body{
     100% { transform: scale(1); }
 }
 
-#resume {
-    font-weight: bold;
-    animation:  move 2s infinite;
-    box-shadow: 0px 0px 30px #3aa885;
-    transition: all 2s ease-in-out;
-}
 
 .block3{
     display: flex;
@@ -258,13 +244,12 @@ body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    margin-top: -2rem;
 }
 
 
 #block4{
     background-color: #393E46;
-    padding-top: 1rem;
+    padding-top: 6rem;
 }
 .services{
     color: #494d54;
@@ -275,15 +260,16 @@ body{
 }
 .whatIdo{
     text-align: center;
-    margin-top: -155px;
+    margin-top: -5.5rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
 }
 .line2{
     text-align: center;
     color: #46cfa4;
     font-size: 2rem;
-    margin-top: -40px;
+    margin-top: -1rem;
     margin-bottom: 5rem;
 }
 
@@ -354,4 +340,229 @@ body{
     font-weight: 100;
     text-align: justify;
     display: inline-flex;
+}
+
+#logos{
+    display: flex;
+}
+
+
+#facebook, #twitter, #github, #linkedin{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 50px;
+    font-family: Poppins sans-serif;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact-header h1::after {
+      width: 100px;
+    height: 4px;
+    margin: 10px  ;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px ;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0acf97;
+}
+#address_contact{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #bfbfbf;
+    cursor: pointer;
+}
+#twit{
+    display: none;
+}
+#twitter:hover,#twit
+{
+color: #44b6ac;
+
+}
+#facebook:hover
+{
+color: #3055a0;
+}
+#instagram:hover
+{
+color: #dc6ecf;
+}
+#google:hover
+{
+color: #d02222;
+}
+#linkedin:hover
+{
+color: #0a28d0;
+}
+.contact-form {
+    width:90%;
+   
+}
+
+.contact-form h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#textname
+{
+    width: 350px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #232a31;
+    color: #fff;
+    height:25px;
+   
+}
+#textname:active {
+    border-color: #0a4bbc;
+}
+#emailtextarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:#232a31;
+    color: #fff;
+    display: flex;
+}
+
+#emailtextarea {
+
+    height: 130px;
+    resize: none;
+}
+#emailtextarea:hover{
+   box-shadow: #0a4bbc;
+}
+#endbutton {
+    width: 25%;
+    padding: 15px;
+    background-color: #0acf97;
+    color: #fff;
+    border: none;
+    border-radius:40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#endbutton:hover {
+    background-color: #0abc85;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #b7a4a4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8;
+                0 0 60px  #2696e8;
+                0 0 100px #2696e8;
+    animation:colors 5s infinite;
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+
+}
+.cursor:before{
+    content: "";
+    position: absolute;
+    background: #2696e8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
 }

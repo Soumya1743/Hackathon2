@@ -1,0 +1,344 @@
+body{
+    background-color: rgb(25, 25, 30);
+}
+#container{
+    display: flex;
+    margin-top: 0px;
+}
+#navigation{
+    width: 19%;
+    background-color: rgb(25, 25, 30);
+    height: 100%;
+    border-top-left-radius: 10px;
+    position: fixed;
+}
+.logo{
+    text-align: center;
+}
+#logo{
+    border: 7px solid rgb(67, 67, 67);
+    border-radius: 50%;
+    margin-top: 3rem;
+    width: 13rem;
+}
+#name{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.anchors{
+    text-align: center;
+    margin-top: 7rem;
+}
+#nav1{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+#nav1:hover{
+    color: #46cfa4;
+    transition: all 1s ease;
+}
+
+#main{
+    margin-left: 19.2%;
+}
+#resume_head{
+    color: aliceblue;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myeducation_text{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#div1,#div2,#div3,#div4,#div5{
+    background-color: black;
+    height: 18rem;
+    width: 28rem;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#year_next{
+    height: 2rem;
+    width: 7.5rem;
+    background-color:#bc3545 ;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-size: 1rem;
+ 
+}
+#year_text{
+    color: aliceblue;
+   padding-top: 0.3rem;
+    text-align: center;
+    justify-content: center;
+   
+}
+#bsc_text{
+    color: aliceblue;
+    width: 30rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+#college_text{
+    color: #20c997;
+    width: 30rem;
+    font-size: 1.5rem;
+}
+
+#container_next{
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#skill_text{
+    color: aliceblue;
+    display: inline-block;
+}
+#flex_div{
+    width: 40rem;
+    display: flex;
+    
+    justify-content: space-between;
+}
+#skill_1{
+    width: 40rem;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+}
+#skill_2{
+    width: 35rem;
+    height: 0.5rem;
+    background-color: #20c997;
+    border-radius: 10px;
+}
+#skill_3{
+    width: 40rem;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+}
+#skill_4{
+    width: 40rem;
+    height: 0.5rem;
+    background-color: #20c997;
+    border-radius: 10px;
+}
+#skill_5{
+    width: 30rem;
+    height: 0.5rem;
+    background-color: #20c997;
+    border-radius: 10px;
+}
+#flex_div_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4rem;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #b7a4a4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8;
+                0 0 60px  #2696e8;
+                0 0 100px #2696e8;
+    animation:colors 5s infinite;
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+
+}
+.cursor:before{
+    content: "";
+    position: absolute;
+    background: #2696e8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 50px;
+    font-family: Poppins sans-serif;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact-header h1::after {
+      width: 100px;
+    height: 4px;
+    margin: 10px  ;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px ;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0acf97;
+}
+#address_contact{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #bfbfbf;
+    cursor: pointer;
+}
+#twit{
+    display: none;
+}
+#twitter:hover,#twit
+{
+color: #44b6ac;
+
+}
+#facebook:hover
+{
+color: #3055a0;
+}
+#instagram:hover
+{
+color: #dc6ecf;
+}
+#google:hover
+{
+color: #d02222;
+}
+#linkedin:hover
+{
+color: #0a28d0;
+}
+.contact-form {
+    width:90%;
+   
+}
+
+.contact-form h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#textname
+{
+    width: 350px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #232a31;
+    color: #fff;
+    height:25px;
+   
+}
+#textname:active {
+    border-color: #0a4bbc;
+}
+#emailtextarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:#232a31;
+    color: #fff;
+    display: flex;
+}
+
+#emailtextarea {
+
+    height: 130px;
+    resize: none;
+}
+#emailtextarea:hover{
+   box-shadow: #0a4bbc;
+}
+#endbutton {
+    width: 25%;
+    padding: 15px;
+    background-color: #0acf97;
+    color: #fff;
+    border: none;
+    border-radius:40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#endbutton:hover {
+    background-color: #0abc85;
+}
