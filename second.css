@@ -41,7 +41,7 @@ body{
     transition: all 1s ease;
 }
 
-#main{
+#main_next{
     margin-left: 19.2%;
 }
 #resume_head{
@@ -62,27 +62,28 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#year_next{
-    height: 2rem;
-    width: 7.5rem;
-    background-color:#bc3545 ;
-    border-radius: 10px;
-    margin-left: 1rem;
-    font-size: 1rem;
- 
-}
 #year_text{
+    padding: 1rem 0rem 1rem 0rem;
+    width: 9rem;
+    background-color:#bc3545;
+    color: white;
+    border-radius: 50px;
+    margin-left: 35%;
+    font-size: 1rem;
+}
+#year_text:hover{
+    cursor: pointer;
+}
+#year_next{
     color: aliceblue;
-   padding-top: 0.3rem;
+    padding-top: 0.3rem;
     text-align: center;
     justify-content: center;
-   
 }
 #bsc_text{
     color: aliceblue;
-    width: 30rem;
     padding-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 #college_text{
     color: #20c997;
@@ -92,11 +93,25 @@ body{
 
 #container_next{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     column-gap: 2rem;
     row-gap: 2rem;
     align-items: center;
     justify-content: center;
 }
+
+#percentage{
+    margin-bottom: 2rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
 
 
 #skill_text{
@@ -104,37 +119,36 @@ body{
     display: inline-block;
 }
 #flex_div{
-    width: 40rem;
+    width: 30rem;
     display: flex;
-    
     justify-content: space-between;
 }
 #skill_1{
-    width: 40rem;
+    width: 30rem;
     height: 0.5rem;
     background-color: black;
     border-radius: 10px;
 }
 #skill_2{
-    width: 35rem;
+    width: 25rem;
     height: 0.5rem;
     background-color: #20c997;
     border-radius: 10px;
 }
 #skill_3{
-    width: 40rem;
+    width: 30rem;
     height: 0.5rem;
     background-color: black;
     border-radius: 10px;
 }
 #skill_4{
-    width: 40rem;
+    width: 30rem;
     height: 0.5rem;
     background-color: #20c997;
     border-radius: 10px;
 }
 #skill_5{
-    width: 30rem;
+    width: 20rem;
     height: 0.5rem;
     background-color: #20c997;
     border-radius: 10px;
@@ -165,19 +179,15 @@ body{
     border-radius: 50%;
     pointer-events: none;
     box-shadow: 0 0 20px #2696e8;
-                0 0 60px  #2696e8;
-                0 0 100px #2696e8;
-    animation:colors 5s infinite;
+    animation: colors 5s infinite;
 }
 @keyframes colors{
     0%{
         filter: hue-rotate(0deg);
-
     }
     100%{
         filter: hue-rotate(360deg);
     }
-
 }
 .cursor:before{
     content: "";
@@ -341,4 +351,36 @@ color: #0a28d0;
 
 #endbutton:hover {
     background-color: #0abc85;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+body {
+    animation: fadeIn 2s ease-in;
+}
+
+
+
+
+@media(max-width: 980px ) {
+    #resume_head{
+        text-align: center;
+    }
+    #container_next{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 5rem;
+    }
+    #flex_div_1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 6rem;
+    }
+    #logo{
+        display: none;
+    }
 }
